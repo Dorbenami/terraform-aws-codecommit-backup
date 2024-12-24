@@ -1,0 +1,4 @@
+region          = "your-region"
+account_id      = "your-account-id"
+repository_name = "your-repository-name"
+bucket_name     = "your-s3-bucket-name"
