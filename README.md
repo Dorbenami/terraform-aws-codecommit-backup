@@ -5,3 +5,6 @@ This repository contains Terraform configurations for provisioning and managing 
 This repository contains a simple Terraform configuration to back up an AWS CodeCommit repository to an S3 bucket. The backup triggers automatically every time there’s a change in the repository. The S3 bucket is configured with the necessary permissions and versioning for efficient backup management.
 
 Feel free to review or contribute!
+
+Notice that you should:
+cp terraform.tfvars.example terraform.tfvars
