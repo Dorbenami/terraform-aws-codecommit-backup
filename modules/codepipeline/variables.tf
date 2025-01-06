@@ -1,15 +1,15 @@
 variable "pipeline_name" {
-  description = "Name of the pipeline"
+  description = "The name of the CodePipeline"
   type        = string
 }
 
 variable "role_arn" {
-  description = "IAM role ARN for the pipeline"
+  description = "IAM Role ARN for CodePipeline"
   type        = string
 }
 
 variable "bucket_name" {
-  description = "Name of the S3 bucket for backups"
+  description = "Name of the S3 bucket for pipeline artifacts"
   type        = string
 }
 
@@ -19,7 +19,11 @@ variable "repository_name" {
 }
 
 variable "branch_name" {
-  description = "Branch name for the CodeCommit repository"
+  description = "Branch name to monitor for changes"
   type        = string
-  default     = "main"
+}
+
+variable "artifact_path" {
+  description = "Path for saving pipeline artifacts in the S3 bucket"
+  type        = string
 }

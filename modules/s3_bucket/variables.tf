@@ -8,3 +8,8 @@ variable "expiration_days" {
   type        = number
   default     = 30
 }
+
+variable "repository_version" {
+  description = "The commit hash or version tag to include in the S3 object key"
+  type        = string
+}

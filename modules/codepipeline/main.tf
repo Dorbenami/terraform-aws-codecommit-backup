@@ -37,8 +37,8 @@ resource "aws_codepipeline" "pipeline" {
       configuration = {
         BucketName = var.bucket_name
         Extract    = "false"
-        ObjectKey  = "backups/${var.repository_name}.zip" # Specify the object key
-
+        # Organize backups by repository and branch
+        ObjectKey  = "backups/${var.repository_name}/${var.branch_name}/source.zip"
       }
     }
   }

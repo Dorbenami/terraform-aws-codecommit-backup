@@ -1,4 +1,10 @@
-region          = "your-region"
-account_id      = "your-account-id"
-repository_name = "your-repository-name"
-bucket_name     = "your-s3-bucket-name"
+bucket_name        = "my-backup-bucket-name" # Name of the S3 bucket for storing artifacts
+expiration_days    = 30                         # Number of days to retain artifacts
+repository_version = "enabled"                  # Versioning configuration for the S3 bucket
+region             = "region"             # AWS Region
+account_id         = ""             # Your AWS Account ID
+
+repositories = {
+  ""  = []
+  "" = []
+}
